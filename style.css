@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(120deg, #e7e572, #e7d672);
+  color: #a19f0b;
+  body {
+  position: relative;
+  z-index: 1;
+}
+
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 15px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(15, 5, 2, 0.664);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  color: #e6c50ec4;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #75620d;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #8a6d00;
+}
+
+/* HERO */
+header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  font-family: 'Playfair Display', serif;
+  color: #6b5710;
+  animation: fadeDown 1.2s ease;
+}
+
+.hero-text p {
+  margin: 10px 0 25px;
+  color: #a39b22;
+  animation: fadeUp 1.2s ease;
+}
+
+/* BUTTON GLOW */
+.btn-glow {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background: #fff1a8;
+  color: #72611c;
+  text-decoration: none;
+  box-shadow: 0 0 10px #fff1a8;
+  transition: 0.3s;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 15px #ffe066, 0 0 35px #ffd43b;
+  transform: scale(1.08);
+}
+
+/* SECTION */
+section {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #61521a;
+  margin-bottom: 20px;
+}
+
+/* ABOUT */
+#about p {
+  max-width: 700px;
+  margin: auto;
+  color: #6d5b0c;
+}
+
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  margin: 8px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: #fff3b0;
+  color: #7a6000;
+  box-shadow: 0 0 8px #fff3b0;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  transform: scale(1.1);
+}
+
+/* PORTFOLIO */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 220px;
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px) rotate(1deg);
+}
+
+/* CONTACT */
+.contact-btn {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #7c5c18;
+}
+
+/* ANIMASI */
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* SCROLL REVEAL */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 2.2em;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
+.menu {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu button {
+  padding: 10px 25px;
+  margin: 5px;
+  border: none;
+  border-radius: 20px;
+  background: #fff1a8;
+  color: #7a6000;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.menu button:hover {
+  background: #ffe066;
+  transform: scale(1.05);
+}
+
+.content-box {
+  text-align: center;
+}
+
+.content-item {
+  display: none;   /* disembunyikan dulu */
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(131, 109, 12, 0.8);
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.hobi-link {
+  text-decoration: none;
+  background: #fff1a8;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #7a6000;
+  font-weight: 500;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.hobi-link:hover {
+  background: #ffe066;
+  transform: scale(1.05);
+}
+/* === BACKGROUND ANIMASI BUNGA === */
+.flower-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.flower {
+  position: absolute;
+  font-size: 24px;
+  opacity: 0.6;
+  animation: floatFlower 15s linear infinite;
+}
+
+/* Posisi random tiap bunga */
+.flower:nth-child(1) { left: 10%; animation-delay: 0s; }
+.flower:nth-child(2) { left: 30%; animation-delay: 3s; }
+.flower:nth-child(3) { left: 50%; animation-delay: 6s; }
+.flower:nth-child(4) { left: 70%; animation-delay: 9s; }
+.flower:nth-child(5) { left: 90%; animation-delay: 12s; }
+
+@keyframes floatFlower {
+  0% {
+    top: 110%;
+    transform: translateX(0) rotate(0deg);
+  }
+  100% {
+    top: -10%;
+    transform: translateX(40px) rotate(360deg);
+  }
+}
+/* === ANIMASI DAUN JATUH === */
+.leaf-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.leaf {
+  position: absolute;
+  font-size: 28px;
+  opacity: 0.5;
+  animation: fallLeaf 10s linear infinite;
+}
+
+/* Posisi acak */
+.leaf:nth-child(1) { left: 15%; animation-delay: 0s; }
+.leaf:nth-child(2) { left: 35%; animation-delay: 2s; }
+.leaf:nth-child(3) { left: 55%; animation-delay: 4s; }
+.leaf:nth-child(4) { left: 75%; animation-delay: 6s; }
+.leaf:nth-child(5) { left: 90%; animation-delay: 8s; }
+
+/* Animasi jatuh */
+@keyframes fallLeaf {
+  0% {
+    top: -10%;
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(-40px) rotate(180deg);
+  }
+  100% {
+    top: 110%;
+    transform: translateX(40px) rotate(360deg);
+  }
+}
+

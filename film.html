@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Film Favorit Virly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Poppins, sans-serif;
+      background: #fff9db;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #8a6d00;
+      margin-bottom: 30px;
+    }
+
+    .film-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .film-card {
+      background: white;
+      border-radius: 20px;
+      padding: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .film-card:hover {
+      transform: scale(1.05);
+    }
+
+    .film-card img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 10px;
+    }
+
+    .film-card p {
+      font-weight: 500;
+      color: #7a6000;
+      font-size: 14px;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 40px;
+      text-decoration: none;
+      background: #ffe066;
+      padding: 10px 30px;
+      border-radius: 25px;
+      color: #7a6000;
+      font-weight: 500;
+    }
+
+    .back-btn:hover {
+      background: #ffdd33;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Film Favorit Saya 🎬</h1>
+
+  <div class="film-container">
+
+    <div class="film-card">
+      <img src="images/better days.jpg" alt="betterdays">
+      <p>betterdays</p>
+    </div>
+
+    <div class="film-card">
+      <img src="images/How to make millions before grandma dies.jpg" alt="How to make millions before grandma dies">
+      <p>How to make millions before grandma dies</p>
+    </div>
+
+    <div class="film-card">
+      <img src="images/harry porter.jpg" alt="harry porter">
+      <p>harry porter</p>
+    </div>
+
+    <div class="film-card">
+      <img src="images/Hatchiko.jpg" alt="Hatchiko">
+      <p>Hatchiko</p>
+    </div>
+
+    <div class="film-card">
+      <img src="images/Into the Wild.jpg" alt="Into the Wild">
+      <p>Into the Wild</p>
+    </div>
+    <div class="film-card">
+      <img src="images/Legally Blonde.jpg" alt="Legally Blonde">
+      <p>Legally Blonde</p>
+    </div>
+    <div class="film-card">
+      <img src="images/The hunger games.jpg" alt="The hunger games">
+      <p>The hunger games</p>
+    </div>
+    <div class="film-card">
+      <img src="images/Ready or Not.jpg" alt="Ready or Not">
+      <p>Ready or Not</p>
+    </div>
+    <div class="film-card">
+      <img src="images/Enola Holmes.jpg" alt="Enola Holmes">
+      <p>Enola Holmes</p>
+    </div>
+    <div class="film-card">
+      <img src="images/The maze runner.jpg" alt="The maze runner">
+      <p>The maze runner</p>
+    </div>
+
+  </div>
+
+  <a href="index.html" class="back-btn">⬅ Kembali ke Portofolio</a>
+
+</body>
+</html>
